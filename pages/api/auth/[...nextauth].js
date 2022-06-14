@@ -8,9 +8,18 @@ import Auth0Provider from "next-auth/providers/auth0"
 // import AppleProvider from "next-auth/providers/apple"
 // import EmailProvider from "next-auth/providers/email"
 
+import { PrismaAdapter } from "@next-auth/prisma-adapter"
+import { PrismaClient } from "@prisma/client"
+
+const prisma = new PrismaClient()
+
+
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
 export default NextAuth({
+  
+  adapter: PrismaAdapter(prisma),
+
   // https://next-auth.js.org/configuration/providers/oauth
   providers: [
     /* EmailProvider({
@@ -57,6 +66,8 @@ export default NextAuth({
     colorScheme: "light",
   },
 
+  /*
+  //https://next-auth.js.org/getting-started/example#extensibility
   callbacks: {
     async jwt({ token, account }) {
       // Persist the OAuth access_token to the token right after signin
@@ -70,5 +81,9 @@ export default NextAuth({
       session.accessToken = token.accessToken
       return session
     }
-  }
+  },
+  */
+
+  database: process.env.DATABASE_URL,
+
 })
