@@ -19,7 +19,9 @@ export default function Home() {
 
       <div className='center'>
         <Link href="/login-test"><a >Login-Test A</a></Link> <br />
+        <br />
         <Link href="/login-test/b"><a >Login-Test B</a></Link> <br />
+        <br />
         <Link href="/login-test/c"><a >Login-Test C</a></Link> <br />
       </div>
     </div>
