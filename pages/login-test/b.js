@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import LoginBtn from '../components/login-btn'
-import styles from '../styles/Home.module.css'
+import LoginBtn from '../../components/login-btn'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {
+export default function LoginTest() {
   return (
     <div className={styles.container}>
       <Head>
@@ -16,12 +16,13 @@ export default function Home() {
       <header className={styles.center}>
         <LoginBtn />
       </header>
-
-      <div className='center'>
-        <Link href="/login-test"><a >Login-Test A</a></Link> <br />
-        <Link href="/login-test/b"><a >Login-Test B</a></Link> <br />
-        <Link href="/login-test/c"><a >Login-Test C</a></Link> <br />
+    
+      <div>
+        <p> Page B</p>
+        <br />
+        <Link href="/"><a >Return to Index</a></Link>
       </div>
+
     </div>
   )
 }
