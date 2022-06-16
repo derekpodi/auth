@@ -11,7 +11,17 @@ import Auth0Provider from "next-auth/providers/auth0"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import { PrismaClient } from "@prisma/client"
 
-const prisma = new PrismaClient()
+let prisma = new PrismaClient()
+
+//https://arnavgosain.com/sqlite-prisma-litestream
+prisma.$queryRaw`PRAGMA journal_mode = WAL;`
+  .then(() => {
+    console.log("ENABLED WAL MODE FOR DATABASE");
+  })
+  .catch((err) => {
+    console.log("DB SETUP FAILED", err);
+    process.exit(1);
+  });
 
 
 // For more information on each option (and a full list of options) go to
