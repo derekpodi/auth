@@ -18,11 +18,11 @@ export default function Home() {
       </header>
 
       <div className='center'>
-        <Link href="/login-test"><a >Login-Test A</a></Link> <br />
+        <Link href="/login-test"><a >Page A</a></Link> <br />
         <br />
-        <Link href="/login-test/b"><a >Login-Test B</a></Link> <br />
+        <Link href="/login-test/b"><a >Page B</a></Link> <br />
         <br />
-        <Link href="/login-test/c"><a >Login-Test C</a></Link> <br />
+        <Link href="/login-test/c"><a >Page C</a></Link> <br />
       </div>
     </div>
   )
