@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: blue;
   text-decoration: underline;
 
 }
@@ -26,4 +26,17 @@ a {
 
 .right {
   text-align: right;
+}
+
+.button {
+  background-color: grey;
+  color: white;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  padding: .75rem 1rem;
+}
+
+.button:hover {
+  background-color: white; 
+  color: black;
 }
