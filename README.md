@@ -9,6 +9,8 @@ Initial setup with github OAuth, but options for alternate OAuth logins(Google, 
 
 Login persists across changing pages and closing localhost tab.
 
+Sqlite with WAL mode enabled to expose write-ahead-log(WAL) and shared-memory(SHM) files. Allows for backup via [Litestream](https://litestream.io/guides/docker/). Alternatively you can use a [CRON-based backup](https://litestream.io/alternatives/cron/) for smaller databases with less durable requirements.
+
 ## Run Locally
 
 First, run the development server:
@@ -20,3 +22,4 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
