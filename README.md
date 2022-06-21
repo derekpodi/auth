@@ -1,11 +1,11 @@
 ## Auth
 
-From Init create-next-app, add Next-Auth to an [existing project](https://next-auth.js.org/getting-started/example#existing-project).
+Started with `npx create-next-app@latest` , then added Next-Auth to an [existing project](https://next-auth.js.org/getting-started/example#existing-project).
 
-Next, integrate [Prisma](https://next-auth.js.org/adapters/prisma) with the schema for a local SQLite database.
+Integrate [Prisma](https://next-auth.js.org/adapters/prisma) with the schema for a local SQLite database.
 It has tables to store accounts, users, sessions data for those that authenticate and login.
 
-Initial setup with github OAuth, but options for alternate OAuth logins(Google, Facebook, Twitter). Email login a work in progress for secure storage.
+Initial setup with github OAuth. Options for alternate OAuth logins(Google, Facebook, Twitter) but need to setup developer keys and add secrets to local env file. Email login a work in progress for secure storage.
 
 Login persists across changing pages and closing localhost tab.
 
