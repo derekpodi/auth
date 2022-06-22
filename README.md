@@ -5,7 +5,7 @@ Started with `npx create-next-app@latest` , then added Next-Auth to an [existing
 Integrate [Prisma](https://next-auth.js.org/adapters/prisma) with the schema for a local SQLite database.
 It has tables to store accounts, users, sessions data for those that authenticate and login.
 
-Initial setup with github OAuth. Options for alternate OAuth logins(Google, Facebook, Twitter) but need to setup developer keys and add secrets to local env file. Email login a work in progress for secure storage.
+Initial setup with Github OAuth. Options for alternate OAuth logins(Email, Apple, Google, Facebook, Twitter) but need to setup developer keys and add secrets to local env file. 
 
 Login persists across changing pages and closing localhost tab.
 
