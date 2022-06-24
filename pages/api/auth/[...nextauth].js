@@ -32,6 +32,7 @@ export default NextAuth({
   adapter: PrismaAdapter(prisma),
 
   // https://next-auth.js.org/configuration/providers/oauth
+  // https://support.google.com/accounts/answer/185833  -- App Password to allow sign in with email (gmail)
   providers: [
     EmailProvider({
       server: process.env.EMAIL_SERVER,
