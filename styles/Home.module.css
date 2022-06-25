@@ -122,3 +122,11 @@
   margin-top: 1rem;
   padding: .5rem;
 }
+
+.right {
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: .5rem;
+}
