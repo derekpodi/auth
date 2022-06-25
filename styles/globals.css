@@ -34,6 +34,7 @@ a {
   transition-duration: 0.4s;
   border-radius: 5px;
   padding: .75rem 1rem;
+  margin-left: 1rem;
 }
 
 .button:hover {
