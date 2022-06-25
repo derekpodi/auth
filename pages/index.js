@@ -13,11 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.center}>
+      <header className={styles.right}>
         <LoginBtn />
       </header>
 
       <div className='center'>
+        <h1>Pages to Visit</h1>
         <Link href="/login-test"><a >Page A</a></Link> <br />
         <br />
         <Link href="/login-test/b"><a >Page B</a></Link> <br />

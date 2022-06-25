@@ -13,12 +13,13 @@ export default function LoginTest() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.center}>
+      <header className={styles.right}>
         <LoginBtn />
       </header>
     
-      <div>
-        <p> Alternate page to test login persistance.</p>
+      <div className='center'>
+        <h1>Page A</h1>
+          <p> Alternate page to test login persistance.</p>
         <br />
         <Link href="/"><a >Return to Index</a></Link>
       </div>
