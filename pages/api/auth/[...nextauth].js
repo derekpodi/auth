@@ -72,7 +72,7 @@ export default NextAuth({
   ],
 
   theme: {
-    colorScheme: "light",
+    colorScheme: "dark",
   },
 
   /*
